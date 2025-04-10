@@ -35,7 +35,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MONGO_DETAILS = "mongodb+srv://admin:ZmQvsr76Dkk3oyPU@cluster0.92giasc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_DETAILS = "Replace with your MONGO URI here!"
 client = MongoClient(MONGO_DETAILS)
 db = client["patient_data"]
 us_scans_collection = db["US_scans"]
